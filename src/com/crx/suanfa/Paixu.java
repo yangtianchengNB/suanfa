@@ -102,5 +102,6 @@ public class Paixu {
         Paixu paixu = new Paixu();
         paixu.kuaiPai(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
+        System.out.println("dev_suanfa");
     }
 }
