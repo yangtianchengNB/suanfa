@@ -93,9 +93,7 @@ public class Paixu {
      */
     public static void adjustHeap(int arr[], int i, int length) {
 
-        int temp = arr[i];//先取出当前元素的值，保存在临时变量
-        //开始调整.
-        //说明:k=i*2+1k是i结点的左子结点
+        int temp = arr[i];
         for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
             if (k + 1 < length && arr[k] < arr[k + 1]) {
                 k++;
