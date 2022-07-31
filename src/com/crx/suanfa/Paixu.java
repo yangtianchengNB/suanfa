@@ -26,6 +26,19 @@ public class Paixu {
         kuaiPai(nums,j+1,j1);
     }
 
+    public static void myBubblesort(int[] array){
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length-1; j++) {
+                if(array[j] > array[j+1]){
+                    int tmp = 0;
+                    tmp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = tmp;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = {5,2,8,3,5,1,8,3};
         Paixu paixu = new Paixu();
