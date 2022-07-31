@@ -98,7 +98,8 @@ public class Paixu {
     public static void main(String[] args) {
         int[] arr = {5,2,8,3,5,1,8,3};
         Paixu paixu = new Paixu();
-        paixu.kuaiPai(arr,0,arr.length-1);
+        paixu.selectionSort(arr);
         System.out.println(Arrays.toString(arr));
+        System.out.println("master");
     }
 }
