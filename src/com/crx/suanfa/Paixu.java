@@ -39,6 +39,25 @@ public class Paixu {
         }
     }
 
+    public void selectionSort(int[]nums){
+        int length=nums.length;
+        //最小值的索引
+        int index;
+        for(int i=0;i<length;i++){
+            index=i;
+            for(int j=i+1;j<length;j++){
+                //寻找最小的值
+                if(nums[j]<nums[index]){
+                    index=j;
+                }
+            }
+            int tem=nums[i];
+            nums[i]=nums[index];
+            nums[index]=tem;
+        }
+    }
+
+
     public static void heapSort(int arr[]) {
         int temp = 0;
 
